@@ -1,0 +1,15 @@
+{
+  "name": "b3-dev-yazdani-saghar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha chai-example-main/chai-example-main/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.2.0",
+    "package.json": "^0.0.0"
+  }
+}

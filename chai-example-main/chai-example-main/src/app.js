@@ -29,7 +29,7 @@ class Panier{
 
     removeArticle(artice,montant){
         this.article.pop(artice);
-        this.montant -= montant;
+        this.montant =this.montant;
     }
 
 }

@@ -31,7 +31,20 @@ class Panier{
         this.article.pop(article);
         this.montant =this.montant -montant;
     }
+}
 
+class Coupon {
+    constructor( montantMin, remise){
+        this.montantMin = montantMin;
+        this.remise = remise;
+        this.montant = 0;
+    }
+
+    appliquer(montant){
+        if(montant >= this.montantMin){
+            this.montant = montant - this.remise;
+        }
+    }
 
 
 }
@@ -41,5 +54,6 @@ class Panier{
 
 module.exports = {
     Cube:Cube,
-    Panier:Panier
+    Panier:Panier,
+    Coupon: Coupon,
 }

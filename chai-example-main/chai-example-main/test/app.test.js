@@ -28,15 +28,16 @@ describe('Testing the panier functions', function(){
     it('1.Ajout' , function(){
         const panier = new Panier()
         panier.addArticle('article1', 30);
+        panier.addArticle('article2', 30);
+        assert.equal(panier.article.length, 2, 'Le nombre d\'articles doit être 1');
+        assert.equal(panier.montant, 60, 'Le montant doit etre egale à 30');
+    
+     
+    
+       
+        panier.removeArticle('article2', 30);
         assert.equal(panier.article.length, 1, 'Le nombre d\'articles doit être 1');
         assert.equal(panier.montant, 30, 'Le montant doit etre egale à 30');
-    });
-
-    it('1.suppression' , function(){
-        const panier = new Panier()
-        panier.removeArticle('article1', 30);
-        assert.equal(panier.article.length, 0, 'Le nombre d\'articles doit être 0');
-        assert.equal(panier.montant, 0, 'Le montant doit etre egale à 0');
     });
 
 });

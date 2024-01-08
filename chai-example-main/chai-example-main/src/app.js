@@ -27,10 +27,12 @@ class Panier{
         this.montant += montant;
     }
 
-    removeArticle(artice,montant){
-        this.article.pop(artice);
-        this.montant =this.montant;
+    removeArticle(article,montant){
+        this.article.pop(article);
+        this.montant =this.montant -montant;
     }
+
+
 
 }
 
